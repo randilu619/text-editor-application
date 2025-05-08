@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="toolbar">
+    <button onclick="format('bold')">
+      <img src="C:\Users\Dell\Desktop\myapp\source\downloadd.jfif" alt="Bold" />
+    </button>
+    <button onclick="format('underline')">
+      <img src="C:\Users\Dell\Desktop\myapp\source\under.jpg" alt="Underline" />
+    </button>
+    <button onclick="format('italic')">
+      <img src="C:\Users\Dell\Desktop\myapp\source\download.png" alt="Italic" />
+    </button>
+  
+    <input type="color" onchange="changeColor(this.value)">
+  
+    <button onclick="alignText('left')">
+      <img src="C:\Users\Dell\Desktop\myapp\source\left.jpg" alt="Align Left" />
+    </button>
+    <button onclick="alignText('center')">
+      <img src="C:\Users\Dell\Desktop\myapp\source\center.jpg" alt="Align Center" />
+    </button>
+    <button onclick="alignText('right')">
+      <img src="C:\Users\Dell\Desktop\myapp\source\right.jpg" alt="Align Right" />
+    </button>
+    <button onclick="alignText('justify')">
+      <img src="C:\Users\Dell\Desktop\myapp\source\justify.jpg" alt="Justify" />
+    </button>
+  
+    <button onclick="undo()">
+      <img src="C:\Users\Dell\Desktop\myapp\source\undo.jfif" alt="Undo" />
+    </button>
+    <button onclick="redo()">
+      <img src="C:\Users\Dell\Desktop\myapp\source\images.png" alt="Redo" />
+    </button>
+  </div>
+ 
+
+  <div id="editor" contenteditable="true" class="editor"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

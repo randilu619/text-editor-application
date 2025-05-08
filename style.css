@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+    padding: 20px;
+  }
+  
+  .toolbar {
+    background-color: black;
+    justify-content: center; 
+    margin-bottom: 10px;
+    gap: 10px;
+    display: flex;
+  }
+  
+  .editor {
+    border: 1px solid #ccc;
+    min-height: 400px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+  }
+  .toolbar button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .toolbar button img {
+    width: 30px;
+    height: 30px;
+  }
+  button:hover {
+    background-color: #c28080;
+    border-radius: 5px;
+  }
